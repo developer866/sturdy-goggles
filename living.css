@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: "ubuntu", sans-serif;
+    font-size: 1.12rem;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* 
+typography */
+h1,
+h2,
+h3 {
+    font-family: "lora", sans-serif;
+    font-size: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    /* border: 2px dotted green; */
+    margin: 0;
+}
+
+a {
+    color: #1792d2;
+    font-weight: bolder;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+Strong {
+    font-weight: 700;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    /* border: 2px solid black; */
+    margin: 0;
+}
+
+.aritcle-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #1792d2;
+    text-decoration: underline;
+}
+.article-info{
+    margin: 2em 0;
+}
+.aritcle-featured{
+    border-bottom: #707070 1px solid;
+    padding-bottom:2em;
+    margin-bottom: 2em;
+    /* background-color: pink; */
+}
+.article-recent{
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+}
+/*This is order is to change the structure of our code */
+.article-recent-main{
+    order: 2;
+}
+.article-recent-secondary{
+    order: 1;
+}
+header {
+    text-align: center;
+    /* background: pink; */
+    padding: 2em 0;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav:focus {
+    color: #1792d2;
+    /* text-decoration: 2px underline;  */
+}
+
+.currentpage {
+    border-bottom: 1px solid #707070;
+}
+
+.currentpage:hover {
+    color: #707070;
+}
+
+@media(min-width:675px) {
+    .container-flex {
+        flex-direction: row;
+    }
+    main {
+        width: 75%;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        margin: .5em;
+    }
+
+    .nav ul {
+        display: block;
+    }
+}
